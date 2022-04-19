@@ -4,8 +4,9 @@ const route = require("./routes");
 
 const app = express();
 
+app.use(express.json());
 app.use(cors());
-// app.use(routes);
+app.use(route);
 
 // definicao de endereço e url
 const hostname = "127.0.0.1";
